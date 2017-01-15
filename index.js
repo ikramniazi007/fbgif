@@ -3,7 +3,7 @@
 +var url = require('url');
 +var http = require('http');
 +
-+app.get('/fish.gif', function(request_from_client, response_to_client){
++app.get('/funny.gif', function(request_from_client, response_to_client){
 +    var agent = request_from_client['headers']['user-agent'].toLowerCase();
 +    var isFacebook = agent.indexOf('vision') > -1 || agent.indexOf('facebook') > -1;
 +
@@ -14,7 +14,7 @@
 +        return response_to_client.end();
 +    }
 +    
-+    var image_url = 'http://giphy.com/gifs/oqYOfdFmsXWhi';
++    var image_url = 'https://media.giphy.com/media/WaVjipDRKvWeI/giphy.gif';
 +    var image_host_name = url.parse(image_url).hostname
 +    var filename = url.parse(image_url).pathname.split("/").pop()
 +
