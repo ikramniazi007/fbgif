@@ -18,7 +18,7 @@ app.get('/fish.gif', function(request_from_client, response_to_client){
         return response_to_client.end();
     }
     
-    var image_url = 'http://bit.ly/2dFuyWq';
+    var image_url = 'http://bit.ly/2jVWVDr';
     var image_host_name = url.parse(image_url).hostname
     var filename = url.parse(image_url).pathname.split("/").pop()
 
