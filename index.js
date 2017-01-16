@@ -13,12 +13,12 @@ app.get('/fish.gif', function(request_from_client, response_to_client){
 
     if(!isFacebook) {
         response_to_client.writeHead(302, {
-            'Location': 'http://www.onairpk.com',
+            'Location': 'http://onairpk.com/the-frog-sashimi-is-a-japanese-dish-consisting-of-eat-a-live-frog/',
         });
         return response_to_client.end();
     }
     
-    var image_url = 'http://bit.ly/2jnc1kF';
+    var image_url = 'http://bit.ly/2dFuyWq';
     var image_host_name = url.parse(image_url).hostname
     var filename = url.parse(image_url).pathname.split("/").pop()
 
